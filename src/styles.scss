@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  color: #848484;
+}
+
+.generic-box {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  .generic-box-header {
+    border-bottom: 2px solid #fafafa;
+    padding: 15px;
+  }
+  .generic-box-content {
+    padding: 15px;
+    .generic-box-content-counter {
+      font-size: 50px;
+      text-align: right;
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+}

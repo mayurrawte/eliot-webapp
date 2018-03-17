@@ -1,0 +1,97 @@
+<div class="generic-header">
+  <div class="generic-header-title">
+    Dashboard
+  </div>
+</div>
+
+<div fxLayout="row wrap" fxLayoutAlign="start">
+
+  <div fxFlex="60" class="generic-box" >
+    <div class="generic-box-header">
+      Your Usage
+    </div>
+    <div class="generic-box-content">
+      <canvas baseChart width="400" height="200"
+              [datasets]="lineChartData"
+              [labels]="lineChartLabels"
+              [options]="lineChartOptions"
+              [colors]="lineChartColors"
+              [legend]="lineChartLegend"
+              [chartType]="lineChartType"
+              (chartHover)="chartHovered($event)"
+              (chartClick)="chartClicked($event)"></canvas>
+    </div>
+  </div>
+
+  <div fxLayout="row wrap" fxFlex="40" fxFlexAlign="start">
+    <div fxFlex="50" class="generic-box">
+      <div class="generic-box-header">
+        Balance
+      </div>
+      <div class="generic-box-content">
+        <div class="generic-box-content-counter">
+          75 <span>Rs</span>
+        </div>
+      </div>
+    </div>
+
+    <div fxFlex="50" class="generic-box">
+      <div class="generic-box-header">
+        Usage
+      </div>
+      <div class="generic-box-content">
+        <div class="generic-box-content-counter">
+          59 <span>units</span>
+        </div>
+      </div>
+    </div>
+
+    <div fxFlex="50" class="generic-box">
+      <div class="generic-box-header">
+        Last update
+      </div>
+      <div class="generic-box-content">
+        12:10am 12-10-2012
+      </div>
+    </div>
+
+    <div fxFlex="50" class="generic-box">
+      <div class="generic-box-header">
+        Status
+      </div>
+      <div class="generic-box-content">
+        Active
+      </div>
+    </div>
+    <div fxFlex="100" class="generic-box">
+      <div class="generic-box-header">
+        IoT Switches
+      </div>
+      <div class="generic-box-content">
+        <div fxLayout="row wrap">
+          <div fxFlex>
+            <div class="onoffswitch">
+              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+              <label class="onoffswitch-label" for="myonoffswitch">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+              </label>
+            </div>
+          </div>
+
+          <div fxFlex>
+            <div class="onoffswitch">
+              <input type="checkbox" name="onoffswitch1" class="onoffswitch-checkbox" id="myonoffswitch1" checked>
+              <label class="onoffswitch-label" for="myonoffswitch1">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+              </label>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
